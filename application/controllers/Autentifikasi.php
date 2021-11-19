@@ -74,7 +74,7 @@ private function _login()
     }
 
 }
-public function blok()
+    public function blok()
 {
     $this->load->view('autentifikasi/blok');
 }
