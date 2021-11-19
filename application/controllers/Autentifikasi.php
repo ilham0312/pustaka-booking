@@ -75,17 +75,17 @@ private function _login()
 
 }
     public function blok()
-{
+    {
     $this->load->view('autentifikasi/blok');
-}
+    }
 
-public function gagal()
-{
+    public function gagal()
+    {
     $this->load->view('autentifikasi/gagal');
-}
+    }
 
-public function registrasi()
-{
+    public function registrasi()
+    {
     if ($this->session->userdata('email')) {
         redirect('user');
     }
