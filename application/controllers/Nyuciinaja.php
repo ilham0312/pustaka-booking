@@ -3,7 +3,7 @@
  {
     public function index()
     {
-        $this->load->view('view-form-tokosepatu');
+        $this->load->view('view-form-nyuciinaja');
     }
 
     public function cetak()
