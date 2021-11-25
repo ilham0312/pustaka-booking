@@ -29,20 +29,6 @@
             ]
         
         );
-
-        public function cetak()
-    {
-        $this->form_validation->set_rules(
-            'tanggal',
-            'tanggal masuk sepatu',
-            'required|min_length[3]',
-            [
-                'required' => 'Tanggal Masuk Sepatu Harus diisi',
-                'min_length' => 'Tanggal Masuk Sepatu tidak sesuai  '
-            ]
-        
-        );
-
         if ($this->form_validation->run() != true) {
             $this->load->view('view-form-nyuciinaja');
         } else {
