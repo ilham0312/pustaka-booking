@@ -1,18 +1,23 @@
 <html>
-    
+
 <head>
-    <title>form input mahasiswa</title>
+    <title>Form Input Matakuliah</title>
+<style>
+.pesan {color:red;font-style: italic;}
+</style>
 </head>
 
 <body>
-    <?php echo validation_errors(); ?>
     <center>
-        <form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
+        <div class="pesan">
+            <?php echo validation_errors(); ?>
+        </div>
+        <form action="<?= base_url('matakuliah/cetak'); ?>"method="post">
             <table>
                 <tr>
                     <th colspan="3">
-                        form input data mata kuliah
-                    </th>   
+                        Form Input Data Mata Kuliah
+                    </th>
                 </tr>
                 <tr>
                     <td colspan="3">
@@ -20,25 +25,25 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>kode mtk</th>
+                    <th>Kode MTK</th>
                     <th>:</th>
                     <td>
-                        <input type="text" name="kode" id="kode">
+                        <input type="text" name="kode" id="kode" placeholder="Required">
                     </td>
                 </tr>
                 <tr>
-                    <th>nama mtk</th>
+                    <th>Nama MTK</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="nama" id="nama">
+                        <input type="text" name="nama" id="nama" placeholder="Required">
                     </td>
                 </tr>
                 <tr>
-                    <th>sks</th>
+                    <th>SKS</th>
                     <td>:</td>
                     <td>
                         <select name="sks" id="sks">
-                            <option value="">pilih sks</option>
+                            <option value="">Pilih SKS</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -47,7 +52,7 @@
                 </tr>
                 <tr>
                     <td colspan="3" align="center">
-                        <input type="submit" values="submit">
+                        <input type="submit" value="Submit">
                     </td>
                 </tr>
             </table>
